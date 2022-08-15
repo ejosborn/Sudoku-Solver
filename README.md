@@ -1,5 +1,5 @@
 # Sudoku-Solver
-This Sudoku solver solves a partially complete sudoku board with a backtracking algorithm.
+This Sudoku solver solves a partially complete sudoku board using a backtracking algorithm.
 There are 3 files: SudokuSolve.py, solveForGUI.py, and GUI.py.
 # SudokuSolve.py:
 This python file solves a partially complete sudoky board with no GUI.
