@@ -12,7 +12,7 @@ board = [
     [7, 0, 3, 0, 1, 8, 0, 0, 0]
 ]
 
-def solveSuduko(bo):
+def solveSudoku(bo):
     find = find_emptySpace(bo)
     if not find:
         return True
@@ -23,7 +23,7 @@ def solveSuduko(bo):
         if validate(bo, i, (row, col)):
             bo[row][col] = i
 
-            if solveSuduko(bo):
+            if solveSudoku(bo):
                 return True
 
             bo[row][col] = 0
@@ -78,6 +78,6 @@ def find_emptySpace(bo):
     return None
 
 print_board(board)
-solveSuduko(board)
+solveSudoku(board)
 print("___________________")
 print_board(board)
